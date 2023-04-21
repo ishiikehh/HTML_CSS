@@ -106,3 +106,16 @@ li::before {
     max-width: 570px;
     margin: auto;
 }
+.vejaMais{
+    border: 2px solid var(--cor3);
+    border-radius: 17px;
+}
+.vejaMais p{
+    padding: 5px;
+}
+.vejaMais h3{
+    padding: 15px;
+    background-color: var(--cor3);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
