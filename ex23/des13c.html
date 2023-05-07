@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem | parte 3</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-weight: bolder;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+            border: 2px solid black;    
+        }
+        td, th{
+            border: 1px solid black;
+        }
+        th{
+            padding: 10px 3px;
+        }
+        .h{
+            background-color: gray;
+        }
+        td input{
+            border: transparent;
+            padding: 10px 3px;
+            width: 95%;
+            font-size: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Medias de Notas</caption>
+        <thead>
+            <tr class="h">
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="col">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr class="h">
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matematica</td>
+                <td><input type="number" id="m1" value="0"></td>
+                <td><input type="number" id="m2" value="0"></td>
+                <td id="mm">0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td><input type="number" id="f1" value="0"></td>
+                <td><input type="number" id="f1" value="0"></td>
+                <td id="mf">0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td><input type="number" id="q1" value="0"></td>
+                <td><input type="number" id="q1" value="0"></td>
+                <td id="mq">0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td><input type="number" id="b1" value="0"></td>
+                <td><input type="number" id="b1" value="0"></td>
+                <td  id="mb">0</td>
+            </tr>
+            <tr class="h">
+                <th scope="row" colspan="4">Média de Exatas</th>
+                <td id="mE">0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <td>Historia</td>
+                <td><input type="number" id="h1" value="0"></td>
+                <td><input type="number" id="h1" value="0"></td>
+                <td  id="mh">0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td><input type="number" id="g1" value="0"></td>
+                <td><input type="number" id="g1" value="0"></td>
+                <td id="mg">0</td>
+            </tr>
+            <tr class="h">
+                <th scope="row" colspan="4">Média de Humanas</th>
+                <td id="mH">0</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="scriptd13c.js"></script>
+</body>
+</html>
