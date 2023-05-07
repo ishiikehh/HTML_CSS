@@ -5,18 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: brown;
+        }
         table{
+            background-color: rgba(255, 255, 255, 0.644);
             width: 500px;
             margin: auto;
             border-collapse: collapse;
+            position: relative;
+        }
+        table caption{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 0, 0, 0.74);
+            color: white;
+            padding: 10px;
+            font-weight: bolder;
+            font-variant: small-caps;
         }
         th, td {
             border: 1px solid black;
             padding: 10px;
         }
         thead, tfoot{
-            background-color: rgb(61, 61, 61);
+            background-color: rgba(61, 61, 61, 0.651);
             color: white;
+        }
+        thead tr th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(61, 61, 61);
+        }
+        tfoot tr{
+            position: sticky;
+            bottom: -1px;
+            background-color: rgb(61, 61, 61);
         }
         tbody tr td:nth-child(2){
             text-align: right;
@@ -24,13 +48,14 @@
         tbody tr td:nth-child(3){
             text-align: center;
         }tbody tr:nth-child(even) {
-            background: lightgray;
+            background: rgba(211, 211, 211, 0.473);
         }
         tfoot td{
             text-align: right;
         }
         h1{
             text-align: center;
+            font-variant: small-caps;
         }
 
     </style>
@@ -54,9 +79,9 @@
         </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Poputação</th>
-                <th>Capital</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">Capital</th>
             </tr>
         </thead>
         <tbody>
@@ -198,10 +223,11 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td><strong>210.147.125</strong></td>
             <td></td>
         </tfoot>
     </table>
+    <p style="width: 500px; margin: auto; margin-top: 50px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquam eveniet quibusdam voluptates iure, cupiditate laboriosam consectetur, dolore magni modi, error quasi? Quibusdam obcaecati minima eius exercitationem, quaerat itaque sint?</p>
 </body>
 </html>
