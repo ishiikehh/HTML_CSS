@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body{
+        background-color: lightgrey;
+    }
+        </style>
+    <title>Teste 001 | iframes</title>
+</head>
+<body>
+    <h1>Agora são:</h1>
+    <h2></h2>
+</body>
+<script>
+    setInterval(function hora(){
+        let show = document.querySelector('h2')
+        let hr = new Date()
+        let min = hr.getMinutes()
+        let sec = hr.getSeconds()
+        if (sec < 10){
+            var jl = '0' + sec
+        } else {
+            jl = sec
+        }
+        if(min < 10){
+            var mn = '0' + min
+        }
+         else {
+            mn = min
+        }
+        show.innerHTML = hr.getHours() + ":" + mn + ":" + jl
+
+
+    }, 1000)
+</script>
+</html>
