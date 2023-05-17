@@ -31,10 +31,8 @@ main{
 #redes{
     position: absolute;
     width: 70px;
-    height: 150px;
     right: 0;
     top: 50%;
-    background-color: black;
     transform: translate(0, -50%);
 }
 #tela{
@@ -44,4 +42,42 @@ main{
     width: 203px;
     height: 360px;
 
+}
+
+#redes img{
+    width: 65%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.438);
+    transition: .4s;
+}
+#redes img:hover{
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.589);
+    transform: translate(-2px, -2px);
+}
+@media only screen and (max-width: 495px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #telefone{
+        position: absolute;
+        width: 347px;
+        height: 700px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url('../img/frame-iphone.png') no-repeat;
+        background-size: contain;
+    }
+    #tela{
+        position: relative;
+        top: 90px;
+        left: 25px;
+        width: 300px;
+        height: 525px;
+    
+    }
+    
 }
