@@ -24,7 +24,7 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url('../img/frame-iphone.png');
+    background-image: url('../img/frame-a20.png');
     background-size: contain;
     background-repeat: none;
 }
@@ -36,11 +36,13 @@ main{
     transform: translate(0, -50%);
 }
 #tela{
+    background-color: white;
     position: relative;
-    top: 61px;
-    left: 17px;
+    border-radius: 20px;
+    top: 12px;
+    left: 20px;
     width: 203px;
-    height: 360px;
+    height: 442px;
 
 }
 
@@ -68,16 +70,18 @@ main{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: url('../img/frame-iphone.png') no-repeat;
+        background: url('../img/frame-a20.png') no-repeat;
         background-size: contain;
     }
     #tela{
+        background-color: white;
         position: relative;
-        top: 90px;
-        left: 25px;
-        width: 300px;
-        height: 525px;
-    
+        top: 18px;
+        left: 28px;
+        width: 295px;
+        height: 635px;
+        border-radius: 25px;
     }
+  
     
 }

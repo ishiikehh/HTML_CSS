@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+img#cam{
+    position: fixed;
+    width: 30px;
+    top: -2px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.frame{
+    width: 100%;
+}
+::-webkit-scrollbar { 
+	display: none;
+}
+a{
+    margin-top: -5px;
+    display: block;
+    padding: 15px;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+}
